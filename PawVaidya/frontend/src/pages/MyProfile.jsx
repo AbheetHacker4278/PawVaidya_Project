@@ -27,7 +27,7 @@ import AnimalHealthChatbot from "../components/AnimalHealthChatbot";
 
 const MyProfile = () => {
   // Initialize Gemini
-  const apikey2 = import.meta.env.VITE_API_KEY_GEMINI_2 || "AIzaSyC_zigw88I9HkAvuNecJ_3Z9EAHHFpA9Io";
+  const apikey2 = import.meta.env.VITE_API_KEY3;
   const genAI = new GoogleGenerativeAI(apikey2);
   const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
   

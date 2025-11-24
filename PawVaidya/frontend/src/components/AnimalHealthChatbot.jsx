@@ -26,7 +26,7 @@ const AnimalHealthChatbot = () => {
   const { doctors, userdata, token } = useContext(AppContext);
 
   // Initialize Gemini
-  const apikey2 = import.meta.env.VITE_API_KEY_GEMINI_2 || "AIzaSyBy9PJtO99Zl0HQ6i7VfvcTOabF8QUND-0";
+  const apikey2 = import.meta.env.VITE_API_KEY3;
   const genAI = new GoogleGenerativeAI(apikey2);
   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 

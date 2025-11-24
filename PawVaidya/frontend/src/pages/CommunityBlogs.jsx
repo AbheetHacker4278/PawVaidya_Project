@@ -68,7 +68,7 @@ const CommunityBlogs = () => {
     }
 
     try {
-      const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyDJXu-zXCRi4gWLKPwGNKgDqhvfQfxgfHU');
+      const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
       const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
 
       const langMap = {
